@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宠物食品行业日报 · 2026-03-19</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0f;--bg-card:#111118;--bg-elevated:#1a1a24;--primary:#00d4ff;--secondary:#7c3aed;--accent:#10b981;--warm:#f59e0b;--danger:#ef4444;--text:#f1f5f9;--text-muted:#94a3b8;--border:#27273a;--glow:0 0 20px rgba(0,212,255,0.25);--glow-warm:0 0 20px rgba(245,158,11,0.3)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter','Noto Sans SC',-apple-system,sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.6;min-height:100vh}
+body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse 80% 50% at 20% 40%,rgba(0,212,255,0.07),transparent),radial-gradient(ellipse 60% 40% at 80% 60%,rgba(124,58,237,0.05),transparent);pointer-events:none;z-index:0}
+/* HEADER */
+.hdr{position:relative;z-index:1;background:linear-gradient(180deg,rgba(17,17,24,0.98) 0%,transparent 100%);border-bottom:1px solid var(--border);padding:24px 32px}
+.hdr-inner{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.hdr-left h1{font-size:26px;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hdr-left h1::before{content:'🐾 ';-webkit-text-fill-color:initial}
+.hdr-meta{color:var(--text-muted);font-size:12px;margin-top:5px;letter-spacing:0.3px}
+.live-dot{display:inline-block;width:7px;height:7px;background:var(--accent);border-radius:50%;margin-right:6px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}
+.badge{background:linear-gradient(135deg,var(--warm),#f97316);color:#000;padding:7px 16px;border-radius:28px;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;box-shadow:var(--glow-warm)}
+/* QUICK BAR */
+.qbar{display:flex;gap:28px;padding:14px 32px;background:rgba(26,26,36,0.9);border-bottom:1px solid var(--border);overflow-x:auto;position:relative;z-index:1}
+.qbar::-webkit-scrollbar{height:3px}
+.qbar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.qi{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.ql{color:var(--text-muted);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.qv{font-weight:700;font-size:14px;font-family:monospace}
+.qv.up{color:var(--accent)}.qv.dn{color:var(--danger)}.qv.hi{color:var(--primary)}
+.pill{font-size:10px;padding:2px 7px;border-radius:4px;font-weight:700}
+.pill.up{background:rgba(16,185,129,.15);color:var(--accent)}
+.pill.dn{background:rgba(239,68,68,.15);color:var(--danger)}
+/* TABS */
+.tabs{display:flex;gap:8px;padding:20px 32px 0;position:relative;z-index:1;overflow-x:auto}
+.tab{padding:11px 22px;border:none;background:var(--bg-card);cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;color:var(--text-muted);border-radius:10px;transition:all .25s;white-space:nowrap;border:1px solid var(--border)}
+.tab:hover{background:var(--bg-elevated);color:var(--text);transform:translateY(-1px)}
+.tab.on{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-color:transparent;box-shadow:var(--glow)}
+/* PANELS */
+.panel{display:none;padding:28px 32px;position:relative;z-index:1}
+.panel.on{display:block;animation:fadeIn .35s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.wrap{max-width:1380px;margin:0 auto;display:grid;grid-template-columns:1fr 330px;gap:24px}
+@media(max-width:1080px){.wrap{grid-template-columns:1fr}.aside{order:-1}}
+/* SIGNAL CARDS */
+.sigs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:26px}
+@media(max-width:720px){.sigs{grid-template-columns:1fr}}
+.sig{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:20px;position:relative;overflow:hidden;transition:all .25s}
+.sig::after{content:'';position:absolute;top:-20px;right:-20px;width:80px;height:80px;background:radial-gradient(circle,rgba(0,212,255,.12),transparent 70%);pointer-events:none}
+.sig:hover{border-color:rgba(0,212,255,.3);transform:translateY(-2px)}
+.sig-lb{font-size:11px;text-transform:uppercase;color:var(--text-muted);letter-spacing:.8px;font-weight:600;margin-bottom:8px}
+.sig-val{font-size:30px;font-weight:800;background:linear-gradient(135deg,var(--text),var(--primary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sig-val.up{color:var(--accent);-webkit-text-fill-color:var(--accent)}
+.sig-val.dn{-webkit-text-fill-color:var(--danger)}
+.sig-desc{font-size:12px;color:var(--text-muted);margin-top:6px;line-height:1.5}
+/* SECTION TITLE */
+.stitle{font-size:17px;font-weight:700;margin:28px 0 18px;display:flex;align-items:center;gap:10px}
+.stitle::before{content:'';width:4px;height:22px;background:linear-gradient(180deg,var(--primary),var(--secondary));border-radius:2px}
+.stitle.red::before{background:linear-gradient(180deg,var(--danger),var(--warm))}
+/* EDITORIAL */
+.editorial{background:linear-gradient(135deg,rgba(0,212,255,.07),rgba(124,58,237,.04));border:1px solid rgba(0,212,255,.18);border-radius:14px;padding:20px 24px;font-size:14px;line-height:1.9;margin-bottom:24px;position:relative}
+.editorial::before{content:'💡 编辑洞察';position:absolute;top:-12px;left:18px;background:var(--bg);padding:3px 12px;border-radius:20px;font-size:11px;font-weight:700;color:var(--primary);border:1px solid rgba(0,212,255,.3)}
+/* DISC */
+.disc{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);border-radius:10px;padding:12px 16px;font-size:12px;color:var(--text-muted);margin-bottom:20px;display:flex;gap:10px;align-items:flex-start}
+.disc::before{content:'⚠️';flex-shrink:0}
+/* NEWS */
+.ni{border-bottom:1px solid var(--border);padding:20px 0;transition:padding .2s}
+.ni:hover{padding-left:6px}
+.ni:last-child{border-bottom:none}
+.ni-meta{display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap;align-items:center}
+.tag{font-size:10px;font-weight:700;padding:4px 12px;border-radius:18px;text-transform:uppercase;letter-spacing:.4px;border:1px solid}
+.t-hot{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.3);color:#fca5a5}
+.t-mkt{background:rgba(0,212,255,.1);border-color:rgba(0,212,255,.3);color:var(--primary)}
+.t-prd{background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.3);color:var(--accent)}
+.t-pol{background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.3);color:var(--warm)}
+.t-int{background:rgba(124,58,237,.1);border-color:rgba(124,58,237,.3);color:#a78bfa}
+.src{font-size:11px;color:var(--text-muted);background:var(--bg-elevated);padding:3px 10px;border-radius:16px}
+.ni-title{font-size:15px;font-weight:700;margin-bottom:8px;line-height:1.5}
+.ni-title a{color:var(--text);text-decoration:none;transition:color .2s}
+.ni-title a:hover{color:var(--primary)}
+.ni-body{font-size:13px;color:var(--text-muted);line-height:1.85}
+.ni-body strong{color:var(--text)}
+/* TABLE */
+table{width:100%;border-collapse:separate;border-spacing:0;font-size:13px;background:var(--bg-card);border-radius:14px;overflow:hidden;border:1px solid var(--border);margin-bottom:24px}
+th{background:var(--bg-elevated);color:var(--text);padding:14px 16px;text-align:left;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid var(--border)}
+td{padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-muted);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(0,212,255,.03);color:var(--text)}
+.up{color:var(--accent)!important;font-weight:700}.dn{color:var(--danger)!important;font-weight:700}
+/* PSYCH */
+.psych{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:22px;margin-bottom:24px}
+.psych-t{font-weight:700;color:var(--primary);font-size:15px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.psych-t::before{content:'🧠';font-size:18px}
+.pi{display:flex;gap:14px;margin-bottom:12px;padding:14px;background:var(--bg-elevated);border-radius:10px;border:1px solid var(--border);transition:all .2s}
+.pi:hover{border-color:rgba(0,212,255,.2);transform:translateX(3px)}
+.pi:last-child{margin-bottom:0}
+.pe{font-size:22px;flex-shrink:0;width:32px;text-align:center}
+.pt{font-size:13px;color:var(--text-muted);line-height:1.8}
+.pt strong{color:var(--text)}
+/* IDEAS */
+.ideas{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+@media(max-width:720px){.ideas{grid-template-columns:1fr}}
+.idea{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:20px;position:relative;overflow:hidden;transition:all .25s}
+.idea::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary),var(--accent))}
+.idea:hover{border-color:rgba(0,212,255,.3);transform:translateY(-2px);box-shadow:0 16px 32px rgba(0,0,0,.25)}
+.idea-n{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-radius:8px;font-size:12px;font-weight:800;margin-bottom:12px}
+.idea-h{font-weight:700;font-size:14px;margin-bottom:8px;color:var(--text);line-height:1.5}
+.idea-b{font-size:13px;color:var(--text-muted);line-height:1.75}
+.idea-p{margin-top:12px;font-size:11px;color:var(--primary);font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+/* KEYWORDS */
+.kws{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.kw{padding:8px 16px;border-radius:22px;font-size:12px;font-weight:600;border:1px solid var(--border);background:var(--bg-card);color:var(--text-muted);transition:all .2s;cursor:default}
+.kw:hover{transform:translateY(-1px);border-color:var(--primary);color:var(--primary);box-shadow:var(--glow)}
+.kw-r{border-color:rgba(239,68,68,.3);color:#fca5a5}
+/* EMAIL */
+.ebox{background:var(--bg-elevated);border:1px solid var(--border);border-radius:14px;padding:20px 24px;font-size:12px;font-family:'Fira Code',monospace;white-space:pre-wrap;line-height:2.1;color:var(--text-muted);margin-bottom:24px;overflow-x:auto;position:relative}
+.ebox::before{content:'✉️';position:absolute;top:12px;right:14px;font-size:16px;opacity:.5}
+/* SIDEBAR */
+.aside{display:flex;flex-direction:column;gap:18px}
+.sc{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:border-color .25s}
+.sc:hover{border-color:rgba(0,212,255,.18)}
+.sh{background:var(--bg-elevated);padding:14px 18px;font-size:13px;font-weight:700;color:var(--text);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.sh::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
+.sb{padding:18px}
+.b3i{display:flex;gap:12px;margin-bottom:14px;font-size:13px;align-items:flex-start}
+.b3i:last-child{margin-bottom:0}
+.b3n{flex-shrink:0;width:26px;height:26px;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-radius:7px;text-align:center;line-height:26px;font-size:11px;font-weight:800}
+.b3t{line-height:1.75;color:var(--text-muted)}
+.b3t strong{color:var(--text)}
+.rr{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px dashed var(--border);font-size:13px}
+.rr:last-child{border-bottom:none}
+.rp{color:var(--text-muted);font-size:12px;font-family:monospace}
+.rv{font-weight:700;color:var(--primary);font-family:monospace}
+.ei{padding:11px 0;border-bottom:1px dashed var(--border);font-size:13px}
+.ei:last-child{border-bottom:none}
+.ed{color:var(--text-muted);font-size:11px;margin-bottom:3px;text-transform:uppercase;letter-spacing:.3px}
+.en{font-weight:600;color:var(--text)}
+.etag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;margin-left:6px;background:var(--warm);color:#000;font-weight:700}
+.hl{list-style:none;counter-reset:hl}
+.hl li{counter-increment:hl;padding:9px 0;border-bottom:1px dashed var(--border);font-size:13px;display:flex;align-items:center;gap:10px;color:var(--text-muted)}
+.hl li:last-child{border-bottom:none}
+.hl li::before{content:counter(hl);display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--bg-elevated);border-radius:6px;font-size:11px;font-weight:700;color:var(--text-muted);flex-shrink:0;border:1px solid var(--border)}
+.hl li.r1::before{background:var(--danger);color:#fff;border-color:var(--danger)}
+.hl li.r2::before{background:var(--warm);color:#000;border-color:var(--warm)}
+.hl li.r3::before{background:var(--accent);color:#fff;border-color:var(--accent)}
+.sl{font-size:12px;color:var(--text-muted)}
+.sl a{color:var(--primary);text-decoration:none}
+.sl a:hover{opacity:.75}
+.sl li{padding:5px 0;list-style:disc;margin-left:16px}
+/* FOOTER */
+footer{background:var(--bg-card);border-top:1px solid var(--border);color:var(--text-muted);text-align:center;padding:24px 32px;font-size:12px;margin-top:40px;position:relative;z-index:1;line-height:1.8}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-inner">
+    <div class="hdr-left">
+      <h1>宠物食品行业日报</h1>
+      <div class="hdr-meta"><span class="live-dot"></span>2026-03-19 · 数据时效：24h内 · 来源：PetfoodIndustry / GlobalPETS / 新浪财经 / 东方财富 / FDA</div>
+    </div>
+    <div class="badge">LIVE INTEL</div>
+  </div>
+</header>
+
+<div class="qbar">
+  <div class="qi"><span class="ql">USD/CNY</span><span class="qv hi">6.8879</span><span class="pill dn">-0.04%</span></div>
+  <div class="qi"><span class="ql">EUR/CNY</span><span class="qv">7.5241</span></div>
+  <div class="qi"><span class="ql">吉家宠物新厂</span><span class="qv hi">13亿投资</span></div>
+  <div class="qi"><span class="ql">Petflation 1月</span><span class="qv dn">+3.4% YoY</span></div>
+  <div class="qi"><span class="ql">全球宠物食品市场</span><span class="qv up">$835亿</span></div>
+  <div class="qi"><span class="ql">美国FDA召回</span><span class="qv dn">3起活跃</span></div>
+  <div class="qi"><span class="ql">下一展会</span><span class="qv">Interzoo · 5月</span></div>
+</div>
+
+<nav class="tabs">
+  <button class="tab on" data-tab="global">🌐 全球资讯</button>
+  <button class="tab" data-tab="domestic">🇨🇳 国内市场</button>
+  <button class="tab" data-tab="buyer">🧠 买家心理</button>
+  <button class="tab" data-tab="inspo">✍️ 发帖灵感</button>
+</nav>
+
+<!-- ===== TAB 1 全球资讯 ===== -->
+<div id="tab-global" class="panel on">
+<div class="wrap">
+<main>
+  <div class="disc">数据来源：PetfoodIndustry、GlobalPETS、FDA、Wise 汇率。采集时间 2026-03-19，24h 内新闻均附原始链接，可溯源。</div>
+
+  <div class="editorial">
+    <strong style="color:var(--primary)">今日洞察：</strong>宠物食品行业进入<strong>"双速时代"</strong>——高端市场（$100+）激增423%，Petflation 创2026年新高（+3.4% YoY）。与此同时，美国 FDA 本月三起召回（沙门氏菌、硫胺素不足）提醒出口企业：<strong style="color:var(--danger)">产品质检合规是进入美国市场的红线</strong>。国内方面，吉家宠物13亿新厂开业，国产品牌向中高端全面提速。
+  </div>
+
+  <div class="sigs">
+    <div class="sig">
+      <div class="sig-lb">Petflation 指数（1月）</div>
+      <div class="sig-val dn">+3.4%</div>
+      <div class="sig-desc">2026年1月创历史新高，宠物通胀环境下溢价产品反而更易定价。</div>
+    </div>
+    <div class="sig">
+      <div class="sig-lb">行业预期增速（2026）</div>
+      <div class="sig-val">个位数</div>
+      <div class="sig-desc">行业普查：从业者普遍预期2026年个位数增长，谨慎乐观。</div>
+    </div>
+    <div class="sig">
+      <div class="sig-lb">美国FDA活跃召回</div>
+      <div class="sig-val dn">3起</div>
+      <div class="sig-desc">本季度沙门氏菌、硫胺素不足为主要原因，波及犬猫粮多个品牌。</div>
+    </div>
+  </div>
+
+  <div class="stitle">今日全球动态</div>
+
+  <div class="ni">
+    <div class="ni-meta"><span class="tag t-hot">🔥 今日焦点</span><span class="src">PetfoodIndustry · 2026-03-19</span></div>
+    <div class="ni-title"><a href="https://www.petfoodindustry.com/pet-food-market/news/15818124/petflation-hits-record-high-in-january-2026" target="_blank">Petflation 1月创历史新高：宠物价格指数同比涨 3.4%</a></div>
+    <div class="ni-body">2026年1月宠物价格总体通胀同比升至<strong>3.4%</strong>，环比 12 月再涨 0.3%。这是2026年以来的历史峰值。通胀背景下，<strong>高端功能性产品的溢价空间反而更大</strong>——消费者在价格压力下宁愿选少但选好。出口企业可借此机会提升客单价，而非降价竞争。</div>
+  </div>
+
+  <div class="ni">
+    <div class="ni-meta"><span class="tag t-hot">⚠️ 安全警报</span><span class="src">FDA · 2026-02/03</span></div>
+    <div class="ni-title"><a href="https://www.petfoodindustry.com/safety-quality/pet-food-recalls/news/15819622/young-again-dog-food-recalled-over-salmonella-concern" target="_blank">美国本季度三起宠物食品召回：沙门氏菌 + 硫胺素不足</a></div>
+    <div class="ni-body">
+      ① <strong>Young Again 狗粮</strong>（2026-02-18）：沙门氏菌污染，召回10lb/25lb装中大型犬幼犬配方<br>
+      ② <strong>Go Raw LLC 猫粮</strong>（2026-02-26）：冻干猫粮硫胺素（维生素B1）含量不足，已全线停售 Quest 产品<br>
+      ③ <strong>南非 RCL Foods</strong>（2026-03-05）：全国召回 Bobtail、Bonzo、Canine Cuisine 等多个品牌<br><br>
+      <strong style="color:var(--danger)">出口企业注意：</strong>AAFCO 对硫胺素含量有强制要求，冻干工艺尤需关注维生素保留率。建议每批次出口前做第三方检测。
+    </div>
+  </div>
+
+  <div class="ni">
+    <div class="ni-meta"><span class="tag t-mkt">市场趋势</span><span class="src">PetfoodIndustry · 2026-03</span></div>
+    <div class="ni-title"><a href="https://www.petfoodindustry.com/news-newsletters/pet-food-news/article/15815011/poll-pet-food-industry-anticipates-modest-2026-growth" target="_blank">行业调查：2026年宠物食品从业者预期个位数增长，谨慎乐观</a></div>
+    <div class="ni-body">行业调研显示，大多数从业者预期2026年实现<strong>个位数增长</strong>，计划加大创新投入。增长驱动力从"宠物数量增加"转向"单宠消费升级"。狗主人数量下滑、经济压力持续，但<strong>高端化和功能化产品仍是增长亮点</strong>。</div>
+  </div>
+
+  <div class="ni">
+    <div class="ni-meta"><span class="tag t-prd">产品创新</span><span class="src">GlobalPETS · 2026-03-13</span></div>
+    <div class="ni-title"><a href="https://globalpetindustry.com/magazine/pets-international-magazine-march-2026/" target="_blank">挤压 vs 冷压：宠物食品生产工艺成差异化新战场</a></div>
+    <div class="ni-body">PETS International 3月刊聚焦工艺差异对消化率的影响。冷压工艺宣称更高的营养留存率，但缺乏统一的科学验证标准。<strong>品牌方需要解释清楚生产方式如何影响产品品质</strong>，这正成为高端买家的核心决策依据。</div>
+  </div>
+
+  <div class="ni">
+    <div class="ni-meta"><span class="tag t-mkt">渠道分化</span><span class="src">GlobalPETS · 2026-03-13</span></div>
+    <div class="ni-title"><a href="https://globalpetindustry.com/magazine/pets-international-magazine-march-2026/" target="_blank">美加市场分化：美国线上化加速，加拿大偏好线下</a></div>
+    <div class="ni-body">美国宠物主越来越多选择线上购买（Amazon、订阅制），加拿大则仍偏好实体店（PetSmart、Petsense）。<strong>对华出口企业启示</strong>：进入美国重点布局 Amazon + DTC；进入加拿大需要强大的线下分销网络。</div>
+  </div>
+
+  <div class="stitle">美国亚马逊市场数据（MAT2025）</div>
+  <table>
+    <thead><tr><th>价格区间</th><th>销量份额</th><th>销售额份额</th><th>销量同比</th><th>机会评级</th></tr></thead>
+    <tbody>
+      <tr><td>$0–20</td><td>71.22%</td><td>39.75%</td><td class="up">+16.55%</td><td>🔴 红海竞争</td></tr>
+      <tr><td>$20–40</td><td>18.91%</td><td>25.34%</td><td class="dn">-0.32%</td><td>🟡 谨慎进入</td></tr>
+      <tr><td>$40–100</td><td>4.87%</td><td>21.03%</td><td class="up">+28.70%</td><td class="up">🟢 增长机会</td></tr>
+      <tr><td>$100+</td><td>5.00%</td><td>13.88%</td><td class="up">+423.50%</td><td class="up">⭐ 爆发赛道</td></tr>
+    </tbody>
+  </table>
+</main>
+
+<aside class="aside">
+  <div class="sc">
+    <div class="sh">✅ 今日 3 件大事</div>
+    <div class="sb">
+      <div class="b3i"><div class="b3n">1</div><div class="b3t"><strong>FDA 三起召回警示</strong>——沙门氏菌、硫胺素不足是红线，每批出货前做第三方检测。</div></div>
+      <div class="b3i"><div class="b3n">2</div><div class="b3t"><strong>Petflation 创新高</strong>——通胀背景下高端产品溢价空间更大，现在是涨价的好时机。</div></div>
+      <div class="b3i"><div class="b3n">3</div><div class="b3t"><strong>吉家宠物13亿新厂开业</strong>——国产品牌供应链升级提速，出口质量竞争门槛随之抬高。</div></div>
+    </div>
+  </div>
+
+  <div class="sc">
+    <div class="sh">💱 今日汇率</div>
+    <div class="sb">
+      <div class="rr"><span class="rp">USD/CNY</span><span class="rv">6.8879</span><span class="pill dn">-0.04%</span></div>
+      <div class="rr"><span class="rp">EUR/CNY</span><span class="rv">7.5241</span></div>
+      <div class="rr"><span class="rp">GBP/CNY</span><span class="rv">8.9103</span></div>
+      <div style="margin-top:10px;font-size:11px;color:var(--text-muted);opacity:.7">来源：Wise · 2026-03-19，出货前请以银行实时报价为准</div>
+    </div>
+  </div>
+
+  <div class="sc">
+    <div class="sh">📅 近期展会</div>
+    <div class="sb">
+      <div class="ei"><div class="ed">2026-05-05 ~ 08</div><div class="en">Interzoo 2026<span class="etag">纽伦堡</span></div></div>
+      <div class="ei"><div class="ed">2026-08-19 ~ 21</div><div class="en">亚宠展<span class="etag">上海</span></div></div>
+      <div class="ei"><div class="ed">2026-09-16 ~ 18</div><div class="en">CIPS 长城展<span class="etag">广州</span></div></div>
+    </div>
+  </div>
+
+  <div class="sc">
+    <div class="sh">🔍 买家热搜词</div>
+    <div class="sb">
+      <ul class="hl">
+        <li class="r1">dog snacks for small dogs</li>
+        <li class="r2">dental treats for dogs</li>
+        <li class="r3">organic dog treats</li>
+        <li>grain free cat food</li>
+        <li>high protein pet food</li>
+        <li>hip and joint supplements</li>
+        <li>freeze dried cat food recall</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sc">
+    <div class="sh">📡 今日信源</div>
+    <div class="sb">
+      <ul class="sl">
+        <li><a href="https://www.petfoodindustry.com" target="_blank">PetfoodIndustry.com</a></li>
+        <li><a href="https://globalpetindustry.com" target="_blank">GlobalPETS</a></li>
+        <li><a href="https://www.fda.gov/animal-veterinary/safety-health" target="_blank">FDA 动物健康</a></li>
+        <li><a href="https://wise.com/us/currency-converter/usd-to-cny-rate" target="_blank">Wise 汇率</a></li>
+        <li><a href="https://finance.eastmoney.com" target="_blank">东方财富网</a></li>
+        <li><a href="https://finance.sina.com.cn" target="_blank">新浪财经</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+</div>
+
+<!-- ===== TAB 2 国内市场 ===== -->
+<div id="tab-domestic" class="panel">
+<div class="wrap">
+<main>
+  <div class="sigs">
+    <div class="sig">
+      <div class="sig-lb">2025年市场规模</div>
+      <div class="sig-val hi">¥3126亿</div>
+      <div class="sig-desc">同比增长4.1%，预计2028年达¥4050亿。增速趋稳，进入存量竞争。</div>
+    </div>
+    <div class="sig">
+      <div class="sig-lb">城镇宠物数量</div>
+      <div class="sig-val">1.26亿只</div>
+      <div class="sig-desc">较2024年增长221万只（+1.8%）。增速放缓但消费升级加速。</div>
+    </div>
+    <div class="sig">
+      <div class="sig-lb">宠物食品出口（2025前3季）</div>
+      <div class="sig-val dn">-2.9%</div>
+      <div class="sig-desc">受中美贸易摩擦影响，头部企业已通过海外建厂对冲风险。</div>
+    </div>
+  </div>
+
+  <div class="stitle red">🔥 今日重磅</div>
+
+  <div class="ni" style="background:rgba(16,185,129,.05);border-radius:12px;padding:18px;margin-bottom:16px">
+    <div class="ni-meta"><span class="tag t-prd">🏭 今日新闻</span><span class="src">东方财富 · 2026-03-18</span></div>
+    <div class="ni-title"><a href="https://finance.eastmoney.com/a/202603173674836441.html" target="_blank">吉家宠物徐州苏宠工厂正式开业：13亿投资，规划年产主粮20万吨</a></div>
+    <div class="ni-body">
+      吉家宠物（旗下品牌：蓝氏、疯狂小狗、凡可奇）第二家自有工厂苏宠工厂正式开业。核心数据：<br>
+      • <strong>总投资超13亿元</strong>，总占地200亩，现代化厂房13万平方米<br>
+      • <strong>规划产能20万吨</strong>（主粮），一期10万吨；特色冻干1000吨<br>
+      • 引入瑞士机器、日本包装线、瑞士ABB全自动线，<strong>生产效率提升40%</strong><br>
+      • 超高标准化验室，投资2000万元，可检测100余项宠物食品关键指标<br><br>
+      <strong style="color:var(--accent)">对出口企业意义：</strong>国产供应链能力持续升级，品质门槛随之抬高。同等价位下，拥有自建工厂的品牌将获得更多买家信任。
+    </div>
+  </div>
+
+  <div class="stitle">国内行业动态</div>
+
+  <div class="ni">
+    <div class="ni-meta"><span class="tag t-pol">政策标准</span><span class="src">新华网 · 2025-12-26（2026-05-01生效）</span></div>
+    <div class="ni-title"><a href="https://www.news.cn/food/20251226/944dfdf5b7be41569b1397829d8ef209/c.html" target="_blank">宠物食品两项新农业行业标准批准，2026年5月1日正式实施</a></div>
+    <div class="ni-body">
+      <strong>NY/T4838《全价宠物食品·处方粮通用要求》</strong>：明确水分划分，细化19类处方粮营养特征指标，严格规范原料和添加剂来源。<br>
+      <strong>NY/T4839-2025《冻干宠物食品通用要求》</strong>：管控硫胺素、挥发性盐基氮、组胺含量，规范微生物指标。<br><br>
+      <strong style="color:var(--warm)">注意：</strong>距生效仅约 6 周，冻干品类出口企业需尽快核查合规情况。
+    </div>
+  </div>
+
+  <div class="ni">
+    <div class="ni-meta"><span class="tag t-mkt">机构观点</span><span class="src">新浪财经 · 2026-03-05</span></div>
+    <div class="ni-title"><a href="http://finance.sina.com.cn/roll/2026-03-05/doc-inhpwvix6711892.shtml" target="_blank">国盛/山西/国海三大券商：宠物行业增长趋势不改，国产替代高端化是主线</a></div>
+    <div class="ni-body">
+      • <strong>国盛证券</strong>：季度增速回暖可期，持续看好国产替代及高端化，估值回落后配置价值凸显<br>
+      • <strong>山西证券</strong>：养宠渗透率有望持续提升，竞争将从重营销转向<strong>重研发和供应链</strong><br>
+      • <strong>国海证券</strong>：2025年市场规模3126亿，2026年1月大部分品牌销售额同比实现增长
+    </div>
+  </div>
+
+  <div class="ni">
+    <div class="ni-meta"><span class="tag t-int">产能布局</span><span class="src">中国新闻网 · 2026-03-04</span></div>
+    <div class="ni-title"><a href="https://www.chinanews.com.cn/cj/2026/03-04/10580627.shtml" target="_blank">山西大同宠物冻干食品生产基地正式落地，布局千亿食品赛道</a></div>
+    <div class="ni-body">大同宠物冻干食品生产基地落地，将为大同特色农业延链补链。地方政府加速入局宠物食品产业园，说明<strong>冻干品类已从小众走向主流，供应链向内陆扩散</strong>。</div>
+  </div>
+
+  <div class="stitle">品类市场数据</div>
+  <table>
+    <thead><tr><th>品类</th><th>市场规模</th><th>增速</th><th>核心趋势</th></tr></thead>
+    <tbody>
+      <tr><td><strong>主粮</strong></td><td>¥1072亿</td><td class="up">+8.72%</td><td>烘焙粮年增55%+，膨化粮占比下降</td></tr>
+      <tr><td><strong>零食</strong></td><td>¥445亿</td><td>稳健</td><td>功能性零食占比升至15%</td></tr>
+      <tr><td><strong>营养品</strong></td><td>¥108亿</td><td class="up">+51.9%</td><td>猫营养品同比+64.8%，超越犬类</td></tr>
+      <tr><td><strong>处方粮</strong></td><td>¥58亿</td><td class="up">+19.2%</td><td>新国标落地，国产份额提升</td></tr>
+      <tr><td><strong>鲜粮</strong></td><td>&lt;1%占比</td><td>爆发潜力</td><td>冷链次日达形成物理壁垒</td></tr>
+    </tbody>
+  </table>
+</main>
+
+<aside class="aside">
+  <div class="sc">
+    <div class="sh">✅ 今日 3 件大事</div>
+    <div class="sb">
+      <div class="b3i"><div class="b3n">1</div><div class="b3t"><strong>吉家宠物13亿新厂</strong>——国产供应链升级加速，供应商竞争维度从价格转向品质。</div></div>
+      <div class="b3i"><div class="b3n">2</div><div class="b3t"><strong>冻干新国标 5月生效</strong>——NY/T4839-2025 即将落地，冻干出口需提前核查硫胺素含量。</div></div>
+      <div class="b3i"><div class="b3n">3</div><div class="b3t"><strong>三大券商齐看多</strong>——行业增长趋势不改，重研发和供应链的企业将胜出。</div></div>
+    </div>
+  </div>
+  <div class="sc">
+    <div class="sh">🔍 国内热搜词</div>
+    <div class="sb">
+      <ul class="hl">
+        <li class="r1">烘焙猫粮</li>
+        <li class="r2">冻干狗粮</li>
+        <li class="r3">宠物益生菌</li>
+        <li>处方粮 推荐</li>
+        <li>无谷猫粮</li>
+        <li>宠物营养品</li>
+        <li>鲜粮 次日达</li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+</div>
+
+<!-- ===== TAB 3 买家心理 ===== -->
+<div id="tab-buyer" class="panel">
+<div class="wrap">
+<main>
+  <div class="stitle">北美买家核心心理信号</div>
+  <div class="psych">
+    <div class="psych-t">买家在想什么</div>
+    <div class="pi"><span class="pe">🥩</span><span class="pt"><strong>成分焦虑加剧：</strong>FDA 召回事件（沙门氏菌、硫胺素不足）持续发酵，买家对原料来源和检测报告的关注度大幅提升。配料表前3位必须是具名肉类。</span></div>
+    <div class="pi"><span class="pe">💰</span><span class="pt"><strong>K型消费：</strong>Petflation 创历史新高（+3.4%），中端市场承压；高端产品（$100+）反而销量激增423%。买家要么降级要么升级，中间层正在消失。</span></div>
+    <div class="pi"><span class="pe">🏥</span><span class="pt"><strong>预防式喂养：</strong>兽医成本40%以上涨幅催生"预防胜于治疗"心态。关节护理、肠道健康、皮肤管理等功能性产品成为主动购买品类。</span></div>
+    <div class="pi"><span class="pe">🌱</span><span class="pt"><strong>可持续意识：</strong>Z世代宠物主将环保包装、碳中和生产列入购买决策。这不再是加分项，而是品牌差异化的基本门槛。</span></div>
+    <div class="pi"><span class="pe">📱</span><span class="pt"><strong>召回焦虑：</strong>本季度3起 FDA 召回让买家更倾向选择有公开检测报告的品牌。透明度 = 信任 = 销量。</span></div>
+  </div>
+
+  <div class="stitle">高转化关键词分析</div>
+  <table>
+    <thead><tr><th>关键词</th><th>购买率</th><th>机会说明</th></tr></thead>
+    <tbody>
+      <tr><td>dog snacks for small dogs</td><td class="up">28.89%</td><td>场景细分，竞争相对温和</td></tr>
+      <tr><td>dental treats for dogs</td><td class="up">22%+</td><td>功能型，复购率高，溢价空间大</td></tr>
+      <tr><td>organic dog treats</td><td class="up">18%+</td><td>认证加分，溢价空间</td></tr>
+      <tr><td>freeze dried cat food</td><td>15%+</td><td>关注召回动态，品质卡位机会</td></tr>
+      <tr><td>generic keywords</td><td class="dn">12.08%</td><td>通用词转化率低，避免主攻</td></tr>
+    </tbody>
+  </table>
+
+  <div class="stitle">中国卖家突围策略</div>
+  <table>
+    <thead><tr><th>困境</th><th>破局方向</th></tr></thead>
+    <tbody>
+      <tr><td>占30%商品数，仅23%销售额</td><td>聚焦单一品类建立认知，停止铺货心态</td></tr>
+      <tr><td>本季度3起召回伤害品类信任</td><td>主动公示检测报告，AAFCO/FEDIAF认证背书</td></tr>
+      <tr><td>新品牌份额仅0.1%</td><td>功能细分赛道（洁齿/关节）差异化切入</td></tr>
+      <tr><td>冻干品类受召回影响</td><td>重点强调硫胺素含量达标，主动公开检测数据</td></tr>
+    </tbody>
+  </table>
+</main>
+<aside class="aside">
+  <div class="sc">
+    <div class="sh">✅ 今日 3 件大事</div>
+    <div class="sb">
+      <div class="b3i"><div class="b3n">1</div><div class="b3t"><strong>冻干召回影响</strong>——Go Raw 冻干猫粮召回持续，买家对冻干品类警惕，需主动出示检测报告。</div></div>
+      <div class="b3i"><div class="b3n">2</div><div class="b3t"><strong>透明度是护城河</strong>——公开原料来源、批次检测报告，直接影响转化率。</div></div>
+      <div class="b3i"><div class="b3n">3</div><div class="b3t"><strong>功能细分词转化率高</strong>——dental、joint care 等场景词购买率超20%，优先布局。</div></div>
+    </div>
+  </div>
+</aside>
+</div>
+</div>
+
+<!-- ===== TAB 4 发帖灵感 ===== -->
+<div id="tab-inspo" class="panel">
+<div class="wrap">
+<main>
+  <div class="stitle">今日推荐选题（趁热发）</div>
+  <div class="ideas">
+    <div class="idea">
+      <div class="idea-n">1</div>
+      <div class="idea-h">🔥 "美国这周又召回宠物食品了——教你看懂 FDA 召回怎么避坑"</div>
+      <div class="idea-b">借 FDA 召回事件做科普，解读沙门氏菌/硫胺素问题，结尾自然植入"我们的产品有第三方检测报告"。热点 + 信任建立一箭双雕。</div>
+      <div class="idea-p">LinkedIn · 教育类内容</div>
+    </div>
+    <div class="idea">
+      <div class="idea-n">2</div>
+      <div class="idea-h">📈 "宠物通胀3.4%：为什么现在是涨价的好时机"</div>
+      <div class="idea-b">用 Petflation 数据做支撑，告诉买家整个行业都在涨价，你的涨价是合理的。顺带附上提价邮件模板，提升实用性。</div>
+      <div class="idea-p">LinkedIn · 行业洞察</div>
+    </div>
+    <div class="idea">
+      <div class="idea-n">3</div>
+      <div class="idea-h">🏭 "探访刚开业的13亿宠物食品工厂——国产品质新标准"</div>
+      <div class="idea-b">借吉家宠物新工厂热点，展示国产供应链升级。如果你们有工厂，这是拍工厂内容的绝佳时机，和热点挂钩。</div>
+      <div class="idea-p">TikTok · YouTube Shorts</div>
+    </div>
+    <div class="idea">
+      <div class="idea-n">4</div>
+      <div class="idea-h">🥩 "冻干猫粮怎么选：硫胺素含量为什么那么重要"</div>
+      <div class="idea-b">Go Raw 召回事件教育市场，科普硫胺素（维生素B1）对猫咪的重要性，引导买家看检测报告，自然展示你的合规产品。</div>
+      <div class="idea-p">小红书 · 宠物科普</div>
+    </div>
+  </div>
+
+  <div class="stitle">LinkedIn / YouTube 热词</div>
+  <div class="kws">
+    <span class="kw kw-r">pet food recall 2026</span>
+    <span class="kw kw-r">FDA pet food safety</span>
+    <span class="kw">premium pet food trends</span>
+    <span class="kw">functional pet treats</span>
+    <span class="kw">freeze dried cat food</span>
+    <span class="kw">petflation 2026</span>
+    <span class="kw">grain free dog food</span>
+    <span class="kw">pet food manufacturing China</span>
+    <span class="kw">AAFCO certified</span>
+  </div>
+
+  <div class="stitle">📧 提价通知邮件模板（可直接使用）</div>
+  <div class="ebox">Subject: Price Adjustment Notice – Effective [Date]
+
+Dear [Customer Name],
+
+I hope this message finds you well.
+
+As you may be aware, the global pet food market is currently experiencing
+significant inflationary pressure. According to the latest industry data,
+the US Pet Price Index (Petflation) reached a record high of +3.4% YoY
+in January 2026, driven by rising ingredient, energy, and logistics costs.
+
+To maintain the quality standards you expect from us — and to continue
+investing in proper third-party testing and certifications — we will be
+adjusting our pricing by approximately [X]% effective [Date].
+
+Orders placed before [Date] will be processed at current rates.
+
+We remain committed to providing you with:
+✓ AAFCO/FEDIAF compliant formulations
+✓ Batch-level third-party testing reports
+✓ Transparent ingredient sourcing
+
+Thank you for your continued partnership.
+
+Best regards,
+[Your Name]
+[Company] | [Website]</div>
+
+  <div class="stitle">📧 开发信模板（新客户）</div>
+  <div class="ebox">Subject: [Your Industry] Supplier with Full Compliance Documentation
+
+Hi [Name],
+
+I noticed [Company] has been expanding its premium product line — 
+given the recent FDA recalls and rising consumer scrutiny, I thought
+the timing might be right to connect.
+
+We're a [Location]-based pet food manufacturer specializing in:
+• [Freeze-dried / Baked / Functional treats] for dogs and cats
+• AAFCO-compliant formulations with batch testing reports
+• OEM/ODM from MOQ [X] units
+
+Quick facts:
+- Zero Salmonella/recall history in [X] years
+- Thiamine & vitamin retention testing included standard
+- Samples available within [X] days
+
+Would a 15-minute call make sense?
+
+[Your Name]</div>
+</main>
+
+<aside class="aside">
+  <div class="sc">
+    <div class="sh">✅ 今日 3 件大事</div>
+    <div class="sb">
+      <div class="b3i"><div class="b3n">1</div><div class="b3t"><strong>FDA 召回是内容机会</strong>——今天就发召回解读，借热点建立专业形象。</div></div>
+      <div class="b3i"><div class="b3n">2</div><div class="b3t"><strong>Petflation 是涨价底气</strong>——行业数据支撑提价，现在发提价通知阻力最小。</div></div>
+      <div class="b3i"><div class="b3n">3</div><div class="b3t"><strong>检测报告是最强武器</strong>——公开硫胺素检测数据，与召回品牌直接拉开距离。</div></div>
+    </div>
+  </div>
+  <div class="sc">
+    <div class="sh">📅 内容日历</div>
+    <div class="sb">
+      <div class="ei"><div class="ed">今天</div><div class="en">发 FDA 召回科普内容</div></div>
+      <div class="ei"><div class="ed">本周</div><div class="en">Petflation 涨价通知发客户</div></div>
+      <div class="ei"><div class="ed">3月底</div><div class="en">冻干新国标5月前合规自查</div></div>
+      <div class="ei"><div class="ed">4月</div><div class="en">Interzoo 展前预热内容</div></div>
+    </div>
+  </div>
+</aside>
+</div>
+</div>
+
+<footer>
+  🐾 宠物食品行业日报 · 2026-03-19 &nbsp;|&nbsp; 数据来源：PetfoodIndustry · GlobalPETS · FDA · Wise · 东方财富 · 新浪财经<br>
+  <span>本报告基于公开信息整理，仅供参考，不构成投资或商业建议。</span>
+</footer>
+
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.tab'),panels=document.querySelectorAll('.panel');
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){
+      var id=t.getAttribute('data-tab');
+      tabs.forEach(function(x){x.classList.remove('on')});
+      panels.forEach(function(x){x.classList.remove('on')});
+      t.classList.add('on');
+      document.getElementById('tab-'+id).classList.add('on');
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  });
+})();
+</script>
+</body>
+</html>
